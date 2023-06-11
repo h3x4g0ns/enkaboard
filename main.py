@@ -17,7 +17,7 @@ split = Split(
 keyboard.modules.append(split)
 
 keyboard.keymap = [
-    [   #0
+    [   #0q
         KC.ESC,  KC.N1,   KC.N2,   KC.N3, KC.N4, KC.N5,                             KC.N6, KC.N7,   KC.N8,  KC.N9,   KC.N0,  KC.GRV,
         KC.TAB,   KC.Q,    KC.W,    KC.E,  KC.R,  KC.T,                              KC.Y,  KC.U,    KC.I,   KC.O,    KC.P, KC.BSLS,
         KC.LSFT,  KC.A,    KC.S,    KC.D,  KC.F,  KC.G,                              KC.H,  KC.J,    KC.K,   KC.L, KC.SCLN, KC.RSFT,
