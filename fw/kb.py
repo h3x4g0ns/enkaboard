@@ -5,22 +5,22 @@ from kmk.scanners import DiodeOrientation
 
 class KMKKeyboard(_KMKKeyboard):
     col_pins = (
-        pins[avr['D4']],
-        pins[avr['C6']],
-        pins[avr['D7']],
-        pins[avr['E6']],
-        pins[avr['B4']],
-        pins[avr['B5']],
+        board["GP1"],
+        board["GP2"],
+        board["GP3"],
+        board["GP4"],
+        board["GP5"],
+        board["GP6"],
     )
     row_pins = (
-        pins[avr['F6']],
-        pins[avr['F7']],
-        pins[avr['B1']],
-        pins[avr['B3']],
-        pins[avr['B2']],
-        pins[avr['B6']],
+        board["GP7"],
+        board["GP8"],
+        board["GP9"],
+        board["GP10"],
+        board["GP11"],
+        board["GP12"],
     )
-    data_pin = pins[avr['D0']]
+    data_pin = board["GP0"]
     # data_pin2 =
     # rgb_pixel_pin = pins[avr['D3']]
     # num_pixels = 12
