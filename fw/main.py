@@ -11,8 +11,8 @@ keyboard.extensions.append(MediaKeys())
 keyboard.modules.append(Layers())
 
 split = Split(
-    data_pin=keyboard.data_pin
-    # data_pin2=keyboard.data_pin2
+    data_pin=keyboard.data_pin,
+    data_pin2=keyboard.data_pin2
 )
 keyboard.modules.append(split)
 

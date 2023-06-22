@@ -5,7 +5,7 @@ from kmk.scanners import DiodeOrientation
 
 class KMKKeyboard(_KMKKeyboard):
     col_pins = (
-        board.GP1,
+        board.GP13,
         board.GP2,
         board.GP3,
         board.GP4,
@@ -20,8 +20,8 @@ class KMKKeyboard(_KMKKeyboard):
         board.GP11,
         board.GP12,
     )
-    data_pin = board.GP0
-    # data_pin2 =
+    data_pin = board.GP1
+    data_pin2 = board.GP0
     # rgb_pixel_pin = pins[avr['D3']]
     # num_pixels = 12
     diode_orientation = DiodeOrientation.ROW2COL
