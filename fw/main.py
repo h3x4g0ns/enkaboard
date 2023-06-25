@@ -3,7 +3,7 @@ from kb import KMKKeyboard
 from kmk.extensions.media_keys import MediaKeys
 from kmk.keys import KC
 from kmk.modules.layers import Layers
-from kmk.modules.split import Split
+from kmk.modules.split import Split, SplitType, SplitSide
 
 keyboard = KMKKeyboard()
 
@@ -12,8 +12,13 @@ keyboard.modules.append(Layers())
 
 split = Split(
     data_pin=keyboard.data_pin,
-    data_pin2=keyboard.data_pin2
+    data_pin2=keyboard.data_pin2,
+    split_type=SplitType.UART,
+    split_side=SplitSide.LEFT,
+    use_pio=True,
+    uart_flip = True
 )
+
 keyboard.modules.append(split)
 
 keyboard.keymap = [
