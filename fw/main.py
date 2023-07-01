@@ -14,7 +14,7 @@ split = Split(
     data_pin=keyboard.data_pin,
     data_pin2=keyboard.data_pin2,
     split_type=SplitType.UART,
-    split_side=SplitSide.LEFT,
+    split_side=SplitSide.NONE,
     use_pio=True,
     uart_flip = True
 )
