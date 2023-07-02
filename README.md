@@ -1,4 +1,6 @@
-# Enkaboard Configuration Files
+# enkaboard configuration files
+
+![final](imgs/final.jpg)
 
 My remix of a dactyl manuform with a custom keymap running KMK on the RP2040.
 
